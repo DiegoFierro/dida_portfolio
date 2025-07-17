@@ -1,1 +1,85 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dida's Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+
+    <!-- Navbar Section -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 bg-dark-olive text-white p-4 shadow-lg z-50 rounded-b-lg">
+        <ul class="flex justify-center space-x-8 md:space-x-12">
+            <li><a href="#welcome-section" class="hover:text-light-olive transition duration-300 ease-in-out text-lg md:text-xl font-semibold px-4 py-2 rounded-md">Welcome</a></li>
+            <li><a href="#projects" class="hover:text-light-olive transition duration-300 ease-in-out text-lg md:text-xl font-semibold px-4 py-2 rounded-md">Projects</a></li>
+            <li><a id="profile-link" href="https://github.com/diegofierro" target="_blank" class="hover:text-light-olive transition duration-300 ease-in-out text-lg md:text-xl font-semibold px-4 py-2 rounded-md">GitHub Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome-section" class="min-h-screen flex flex-col items-center justify-center text-center bg-gradient-to-br from-lime-50 to-green-100 pt-24 pb-12">
+        <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+            Hello, I'm Dida, a Web Developer!
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-700 max-w-2xl px-4">
+            Welcome to my portfolio. Here you'll find a collection of my work, showcasing my passion for building engaging and functional web experiences.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 md:px-8 bg-gray-100">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-12">My Projects</h2>
+        <div class="project-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            <!-- Project Tile 1: Product Landing Page -->
+            <a href="https://diegofierro.github.io/freeCodeCamp_project/product_Landing_Page/" target="_blank" class="project-tile block bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 ease-in-out overflow-hidden group">
+                <img src="https://placehold.co/600x400/808000/ffffff?text=Product+Landing+Page" alt="Product Landing Page project screenshot" class="w-full h-48 object-cover rounded-t-xl group-hover:scale-105 transition-transform duration-300">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Product Landing Page</h3>
+                    <p class="text-gray-600">A responsive landing page designed to showcase a product, built with HTML and CSS.</p>
+                </div>
+            </a>
+
+            <!-- Project Tile 2: Survey Form -->
+            <a href="https://diegofierro.github.io/freeCodeCamp_project/survey-form/survey-form.html" target="_blank" class="project-tile block bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 ease-in-out overflow-hidden group">
+                <img src="https://placehold.co/600x400/6b8e23/ffffff?text=User+Survey+Form" alt="Survey Form project screenshot" class="w-full h-48 object-cover rounded-t-xl group-hover:scale-105 transition-transform duration-300">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Survey Form</h3>
+                    <p class="text-gray-600">An interactive survey form for collecting user feedback, demonstrating form validation and styling.</p>
+                </div>
+            </a>
+
+            <!-- Project Tile 3: Tribute Page -->
+            <a href="https://diegofierro.github.io/freeCodeCamp_project/tribute-page/los-prisioneros.html" target="_blank" class="project-tile block bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 ease-in-out overflow-hidden group">
+                <img src="https://placehold.co/600x400/556b2f/ffffff?text=Music+Tribute+Page" alt="Tribute Page project screenshot" class="w-full h-48 object-cover rounded-t-xl group-hover:scale-105 transition-transform duration-300">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Tribute Page</h3>
+                    <p class="text-gray-600">A tribute page dedicated to "Los Prisioneros", showcasing layout and content presentation.</p>
+                </div>
+            </a>
+
+            <!-- Project Tile 4: Python Fundamentals -->
+            <a href="https://diegofierro.github.io/freeCodeCamp_project/python_fundamentals/" target="_blank" class="project-tile block bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition duration-300 ease-in-out overflow-hidden group">
+                <img src="https://placehold.co/600x400/9acd32/ffffff?text=Python+Code+Examples" alt="Python Fundamentals project screenshot" class="w-full h-48 object-cover rounded-t-xl group-hover:scale-105 transition-transform duration-300">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Python Fundamentals</h3>
+                    <p class="text-gray-600">A collection of exercises demonstrating fundamental Python concepts, hosted on GitHub Pages.</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer (Optional, but good practice) -->
+    <footer class="bg-dark-olive text-white text-center p-6 mt-12 rounded-t-lg">
+        <p>&copy; 2025 Dida. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
