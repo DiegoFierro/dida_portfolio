@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Fundamentals Documentation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex flex-col md:flex-row min-h-screen">
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="md:fixed md:left-0 md:top-0 md:w-64 md:h-screen bg-gray-100 p-4 shadow-lg rounded-r-lg overflow-y-auto z-10">
+        <header class="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 rounded-md">Python Fundamentals</header>
+        <ul class="space-y-2">
+            <li><a class="nav-link block p-2 text-lg text-gray-700 hover:bg-blue-200 hover:text-blue-800 rounded-md transition-colors duration-200" href="#Core_Syntax_and_Data_Types">Core Syntax and Data Types</a></li>
+            <li><a class="nav-link block p-2 text-lg text-gray-700 hover:bg-blue-200 hover:text-blue-800 rounded-md transition-colors duration-200" href="#Control_Flow">Control Flow</a></li>
+            <li><a class="nav-link block p-2 text-lg text-gray-700 hover:bg-blue-200 hover:text-blue-800 rounded-md transition-colors duration-200" href="#Data_Structures">Data Structures</a></li>
+            <li><a class="nav-link block p-2 text-lg text-gray-700 hover:bg-blue-200 hover:text-blue-800 rounded-md transition-colors duration-200" href="#Functions">Functions</a></li>
+            <li><a class="nav-link block p-2 text-lg text-gray-700 hover:bg-blue-200 hover:text-blue-800 rounded-md transition-colors duration-200" href="#Modules_and_Packages">Modules and Packages</a></li>
+            <li><a class="nav-link block p-2 text-lg text-gray-700 hover:bg-blue-200 hover:text-blue-800 rounded-md transition-colors duration-200" href="#Object-Oriented_Programming_(OOP)_Concepts">Object-Oriented Programming (OOP) Concepts</a></li>
+            <li><a class="nav-link block p-2 text-lg text-gray-700 hover:bg-blue-200 hover:text-blue-800 rounded-md transition-colors duration-200" href="#File_Handling">File Handling</a></li>
+            <li><a class="nav-link block p-2 text-lg text-gray-700 hover:bg-blue-200 hover:text-blue-800 rounded-md transition-colors duration-200" href="#Exception_Handling">Exception Handling</a></li>
+            <li><a class="nav-link block p-2 text-lg text-gray-700 hover:bg-blue-200 hover:text-blue-800 rounded-md transition-colors duration-200" href="#Popular_Libraries_and_Ecosystem">Popular Libraries and Ecosystem</a></li>
+            <li><a class="nav-link block p-2 text-lg text-gray-700 hover:bg-blue-200 hover:text-blue-800 rounded-md transition-colors duration-200" href="#Why_Python?">Why Python?</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Documentation Content -->
+    <main id="main-doc" class="flex-1 md:ml-64 p-6 md:p-8 overflow-y-auto">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-6 border-b-4 border-blue-500 pb-2 rounded-md">Python Fundamentals Documentation</h1>
+        <p class="mb-6 text-lg">Python is a high-level, interpreted, general-purpose programming language known for its readability and simplicity. Its design philosophy emphasizes code readability with the use of significant indentation. It supports multiple programming paradigms, including object-oriented, imperative, and functional programming.</p>
+
+        <!-- Section: Core Syntax and Data Types -->
+        <section class="main-section bg-white p-6 mb-8 rounded-lg shadow-md" id="Core_Syntax_and_Data_Types">
+            <header class="text-3xl font-semibold text-blue-700 mb-4 pb-2 border-b-2 border-blue-300 rounded-md">Core Syntax and Data Types</header>
+            <p class="mb-4">Python is dynamically typed, meaning you don't need to declare the variable type explicitly. Variables are created when you first assign a value to them.</p>
+            <p class="mb-4">Comments in Python are denoted by the hash symbol (`#`). Anything after the `#` on a line is ignored by the interpreter.</p>
+            <pre class="bg-gray-800 text-white p-4 rounded-md overflow-x-auto mb-4"><code># This is a single-line comment
+age = 30 # Integer variable
+name = "Alice" # String variable
+pi = 3.14 # Float variable
+is_active = True # Boolean variable</code></pre>
+            <p class="mb-4">Python comes with several built-in basic data types:</p>
+            <ul class="list-disc list-inside space-y-2 mb-4">
+                <li><strong>Integers (`int`):</strong> Whole numbers (e.g., `10`, `-5`, `100000`).</li>
+                <li><strong>Floats (`float`):</strong> Decimal numbers (e.g., `3.14`, `-0.5`, `2.718`).</li>
+                <li><strong>Strings (`str`):</strong> Sequences of characters enclosed in single or double quotes (e.g., `"hello world"`, `'Python'`).</li>
+                <li><strong>Booleans (`bool`):</strong> Represent truth values, either `True` or `False`.</li>
+            </ul>
+            <p class="mb-4">Common operators include arithmetic, comparison, and logical operators:</p>
+            <pre class="bg-gray-800 text-white p-4 rounded-md overflow-x-auto"><code># Arithmetic Operators
+result_sum = 5 + 3   # 8
+result_prod = 4 * 2  # 8
+result_div = 10 / 3  # 3.333...
+result_floor_div = 10 // 3 # 3
+result_mod = 10 % 3  # 1
+result_exp = 2 ** 3  # 8
+
+# Comparison Operators
+is_equal = (5 == 5) # True
+is_not_equal = (5 != 3) # True
+is_greater = (7 > 4) # True
+
+# Logical Operators
+logical_and = (True and False) # False
+logical_or = (True or False) # True
+logical_not = (not True) # False</code></pre>
+        </section>
+
+        <!-- Section: Control Flow -->
+        <section class="main-section bg-white p-6 mb-8 rounded-lg shadow-md" id="Control_Flow">
+            <header class="text-3xl font-semibold text-blue-700 mb-4 pb-2 border-b-2 border-blue-300 rounded-md">Control Flow</header>
+            <p class="mb-4">Control flow statements dictate the order in which instructions are executed. Python uses indentation to define code blocks.</p>
+            <h3 class="text-2xl font-medium text-gray-700 mb-3">Conditional Statements (`if`, `elif`, `else`)</h3>
+            <p class="mb-4">These statements allow you to execute different blocks of code based on whether certain conditions are met.</p>
+            <pre class="bg-gray-800 text-white p-4 rounded-md overflow-x-auto mb-4"><code>age = 20
+if age >= 18:
+    print("Adult")
+elif age >= 13:
+    print("Teenager")
+else:
+    print("Child")</code></pre>
+            <h3 class="text-2xl font-medium text-gray-700 mb-3">Loops (`for`, `while`)</h3>
+            <p class="mb-4">Loops are used to repeatedly execute a block of code.</p>
+            <p class="mb-2">The `for` loop iterates over a sequence (like a list, tuple, string, or range).</p>
+            <pre class="bg-gray-800 text-white p-4 rounded-md overflow-x-auto mb-4"><code># For loop with range
+for i in range(3): # Iterates from 0 to 2
+    print(f"Iteration {i}")
+
+# For loop over a list
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(f"I like {fruit}")</code></pre>
+            <p class="mb-2">The `while` loop executes a block of code as long as a specified condition is true.</p>
+            <pre class="bg-gray-800 text-white p-4 rounded-md overflow-x-auto mb-4"><code>count = 0
+while count < 3:
+    print(f"Count is {count}")
+    count += 1</code></pre>
+            <p class="mb-4">`break` and `continue` statements can alter loop behavior:</p>
+            <ul class="list-disc list-inside space-y-2">
+                <li>`break`: Terminates the loop entirely.</li>
+                <li>`continue`: Skips the rest of the current iteration and proceeds to the next.</li>
+            </ul>
+        </section>
+
+        <!-- Section: Data Structures -->
+        <section class="main-section bg-white p-6 mb-8 rounded-lg shadow-md" id="Data_Structures">
+            <header class="text-3xl font-semibold text-blue-700 mb-4 pb-2 border-b-2 border-blue-300 rounded-md">Data Structures</header>
+            <p class="mb-4">Python provides several built-in data structures to organize and store data efficiently.</p>
+            <h3 class="text-2xl font-medium text-gray-700 mb-3">Lists (`list`)</h3>
+            <p class="mb-2">Ordered, mutable (changeable) collections of items. Enclosed in square brackets `[]`.</p>
+            <pre class="bg-gray-800 text-white p-4 rounded-md overflow-x-auto mb-4"><code>my_list = [1, "hello", 3.14, True]
+print(my_list[0]) # Access by index: 1
+my_list.append("new item") # Add item
+my_list[1] = "world" # Modify item</code></pre>
+            <h3 class="text-2xl font-medium text-gray-700 mb-3">Tuples (`tuple`)</h3>
+            <p class="mb-2">Ordered, immutable (unchangeable) collections of items. Enclosed in parentheses `()`.</p>
+            <pre class="bg-gray-800 text-white p-4 rounded-md overflow-x-auto mb-4"><code>my_tuple = (1, 2, "three")
+print(my_tuple[2]) # Access by index: "three"
+# my_tuple[0] = 5 # This would raise an error (immutable)</code></pre>
+            <h3 class="text-2xl font-medium text-gray-700 mb-3">Dictionaries (`dict`)</h3>
+            <p class="mb-2">Unordered, mutable collections of key-value pairs. Enclosed in curly braces `{}`.</p>
+            <pre class="bg-gray-800 text-white p-4 rounded-md overflow-x-auto mb-4"><code>my_dict = {"name": "Alice", "age": 30, "city": "New York"}
+print(my_dict["name"]) # Access by key: "Alice"
+my_dict["age"] = 31 # Modify value
+my_dict["occupation"] = "Engineer" # Add new key-value pair</code></pre>
+            <h3 class="text-2xl font-medium text-gray-700 mb-3">Sets (`set`)</h3>
+            <p class="mb-2">Unordered, mutable collections of unique items. Duplicates are automatically removed. Enclosed in curly braces `{}` (or using `set()`).</p>
+            <pre class="bg-gray-800 text-white p-4 rounded-md overflow-x-auto"><code>my_set = {1, 2, 3, 2, 1} # Result: {1, 2, 3}
+print(my_set)
+my_set.add(4) # Add item
+my_set.remove(1) # Remove item</code></pre>
+        </section>
+
+        <!-- Section: Functions -->
+        <section class="main-section bg-white p-6 mb-8 rounded-lg shadow-md" id="Functions">
+            <header class="text-3xl font-semibold text-blue-700 mb-4 pb-2 border-b-2 border-blue-300 rounded-md">Functions</header>
+            <p class="mb-4">Functions are reusable blocks of code that perform a specific task. They help in organizing code and promoting reusability.</p>
+            <h3 class="text-2xl font-medium text-gray-700 mb-3">Defining Functions (`def`)</h3>
+            <p class="mb-2">Functions are defined using the `def` keyword, followed by the function name, parentheses for parameters, and a colon.</p>
+            <pre class="bg-gray-800 text-white p-4 rounded-md overflow-x-auto mb-4"><code>def greet(name):
+    """This function greets the person passed in as a parameter."""
+    return f"Hello, {name}!"
+
+message = greet("Bob")
+print(message) # Output: Hello, Bob!</code></pre>
+            <p class="mb-4">Functions can accept parameters and return values using the `return` keyword.</p>
+            <h3 class="text-2xl font-medium text-gray-700 mb-3">Lambda Functions</h3>
+            <p class="mb-2">Lambda functions are small, anonymous functions defined with the `lambda` keyword. They can take any number of arguments but can only have one expression.</p>
+            <pre class="bg-gray-800 text-white p-4 rounded-md overflow-x-auto"><code>add = lambda x, y: x + y
+print(add(5, 3)) # Output: 8
+
+multiply = lambda a, b: a * b
+print(multiply(4, 6)) # Output: 24</code></pre>
+        </section>
+
+        <!-- Section: Modules and Packages -->
+        <section class="main-section bg-white p-6 mb-8 rounded-lg shadow-md" id="Modules_and_Packages">
+            <header class="text-3xl font-semibold text-blue-700 mb-4 pb-2 border-b-2 border-blue-300 rounded-md">Modules and Packages</header>
+            <p class="mb-4">Python's modular design allows you to organize code into reusable files and directories.</p>
+            <h3 class="text-2xl font-medium text-gray-700 mb-3">Modules</h3>
+            <p class="mb-2">A module is simply a Python file (`.py`) containing Python code. You can import modules to use their functions, classes, and variables.</p>
+            <pre class="bg-gray-800 text-white p-4 rounded-md overflow-x-auto mb-4"><code>import math
+print(math.sqrt(16)) # Output: 4.0
+
+from datetime import datetime
+print(datetime.now()) # Prints current date and time</code></pre>
+            <h3 class="text-2xl font-medium text-gray-700 mb-3">Packages</h3>
+            <p class="mb-2">A package is a collection of modules organized in directories. It helps in structuring larger applications.</p>
+            <p class="mb-4">The `import` statement is used to bring modules or specific components from modules into the current scope.</p>
+            <ul class="list-disc list-inside space-y-2">
+                <li>`import module_name`: Imports the entire module.</li>
+                <li>`from module_name import specific_item`: Imports only a specific function, class, or variable.</li>
+                <li>`import module_name as alias`: Imports a module with a shorter alias.</li>
+            </ul>
+        </section>
+
+        <!-- Section: Object-Oriented Programming (OOP) Concepts -->
+        <section class="main-section bg-white p-6 mb-8 rounded-lg shadow-md" id="Object-Oriented_Programming_(OOP)_Concepts">
+            <header class="text-3xl font-semibold text-blue-700 mb-4 pb-2 border-b-2 border-blue-300 rounded-md">Object-Oriented Programming (OOP) Concepts</header>
+            <p class="mb-4">Python fully supports Object-Oriented Programming, a paradigm based on the concept of "objects", which can contain data and code.</p>
+            <h3 class="text-2xl font-medium text-gray-700 mb-3">Classes and Objects</h3>
+            <p class="mb-2">A <strong>class</strong> is a blueprint for creating objects. An <strong>object</strong> is an instance of a class.</p>
+            <pre class="bg-gray-800 text-white p-4 rounded-md overflow-x-auto mb-4"><code>class Dog:
+    # The __init__ method is the constructor
+    def __init__(self, name, breed):
+        self.name = name    # Attribute
+        self.breed = breed  # Attribute
+
+    # A method
+    def bark(self):
+        return f"{self.name} says Woof!"
+
+# Creating an object (instance) of the Dog class
+my_dog = Dog("Buddy", "Golden Retriever")
+print(my_dog.bark()) # Calling a method: Buddy says Woof!
+print(my_dog.name) # Accessing an attribute: Buddy</code></pre>
+            <p class="mb-4">Key OOP principles include:</p>
+            <ul class="list-disc list-inside space-y-2">
+                <li><strong>Encapsulation:</strong> Bundling data (attributes) and methods that operate on the data within a single unit (class).</li>
+                <li><strong>Inheritance:</strong> Allows a class (child/subclass) to inherit attributes and methods from another class (parent/superclass), promoting code reuse.</li>
+                <li><strong>Polymorphism:</strong> The ability of different objects to respond to the same method call in their own way, often through method overriding.</li>
+            </ul>
+        </section>
+
+        <!-- Section: File Handling -->
+        <section class="main-section bg-white p-6 mb-8 rounded-lg shadow-md" id="File_Handling">
+            <header class="text-3xl font-semibold text-blue-700 mb-4 pb-2 border-b-2 border-blue-300 rounded-md">File Handling</header>
+            <p class="mb-4">Python provides built-in functions to interact with files on your system, allowing you to read from and write to them.</p>
+            <p class="mb-2">The `open()` function is used to open a file, specifying the file path and the mode (e.g., `'w'` for write, `'r'` for read, `'a'` for append).</p>
+            <pre class="bg-gray-800 text-white p-4 rounded-md overflow-x-auto mb-4"><code># Writing to a file (creates if not exists, overwrites if exists)
+with open("example.txt", "w") as file:
+    file.write("Hello, Python file handling!\n")
+    file.write("This is a new line.")
+
+# Reading from a file
+with open("example.txt", "r") as file:
+    content = file.read()
+    print("File content:")
+    print(content)
+
+# Appending to a file
+with open("example.txt", "a") as file:
+    file.write("\nAppending another line.")</code></pre>
+            <p class="mb-4">The `with` statement is highly recommended for file operations as it ensures the file is automatically closed, even if errors occur.</p>
+        </section>
+
+        <!-- Section: Exception Handling -->
+        <section class="main-section bg-white p-6 mb-8 rounded-lg shadow-md" id="Exception_Handling">
+            <header class="text-3xl font-semibold text-blue-700 mb-4 pb-2 border-b-2 border-blue-300 rounded-md">Exception Handling</header>
+            <p class="mb-4">Exception handling allows you to gracefully manage errors and unexpected events that occur during program execution, preventing your program from crashing.</p>
+            <p class="mb-2">The `try`, `except`, and `finally` blocks are used for this purpose:</p>
+            <ul class="list-disc list-inside space-y-2 mb-4">
+                <li>`try`: The code that might raise an exception is placed here.</li>
+                <li>`except`: If an exception occurs in the `try` block, the code in the `except` block is executed. You can specify the type of exception to catch.</li>
+                <li>`finally`: The code in the `finally` block is always executed, regardless of whether an exception occurred or was handled.</li>
+            </ul>
+            <pre class="bg-gray-800 text-white p-4 rounded-md overflow-x-auto"><code>try:
+    num1 = int(input("Enter a number: "))
+    num2 = int(input("Enter another number: "))
+    result = num1 / num2
+    print(f"Result: {result}")
+except ValueError:
+    print("Invalid input. Please enter integers only.")
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero!")
+except Exception as e: # Catch any other unexpected errors
+    print(f"An unexpected error occurred: {e}")
+finally:
+    print("Execution of the try-except block is complete.")</code></pre>
+        </section>
+
+        <!-- Section: Popular Libraries and Ecosystem -->
+        <section class="main-section bg-white p-6 mb-8 rounded-lg shadow-md" id="Popular_Libraries_and_Ecosystem">
+            <header class="text-3xl font-semibold text-blue-700 mb-4 pb-2 border-b-2 border-blue-300 rounded-md">Popular Libraries and Ecosystem</header>
+            <p class="mb-4">One of Python's greatest strengths is its extensive ecosystem of third-party libraries and frameworks, which significantly extend its capabilities across various domains.</p>
+            <ul class="list-disc list-inside space-y-2 mb-4">
+                <li><strong>NumPy:</strong> Essential for numerical computing, especially for working with large, multi-dimensional arrays and matrices.</li>
+                <li><strong>Pandas:</strong> A powerful library for data manipulation and analysis, providing data structures like DataFrames.</li>
+                <li><strong>Matplotlib/Seaborn:</strong> Widely used for creating static, animated, and interactive visualizations in Python.</li>
+                <li><strong>Scikit-learn:</strong> A comprehensive library for machine learning, offering various classification, regression, and clustering algorithms.</li>
+                <li><strong>Django/Flask:</strong> Popular web development frameworks for building robust and scalable web applications.</li>
+                <li><strong>Requests:</strong> A simple yet elegant HTTP library for making web requests.</li>
+                <li><strong>Beautiful Soup:</strong> Used for parsing HTML and XML documents, often for web scraping.</li>
+            </ul>
+            <p class="mb-4">These are just a few examples; the Python Package Index (PyPI) hosts thousands of libraries for almost any task imaginable.</p>
+        </section>
+
+        <!-- Section: Why Python? -->
+        <section class="main-section bg-white p-6 mb-8 rounded-lg shadow-md" id="Why_Python?">
+            <header class="text-3xl font-semibold text-blue-700 mb-4 pb-2 border-b-2 border-blue-300 rounded-md">Why Python?</header>
+            <p class="mb-4">Python's popularity stems from several key advantages that make it a preferred choice for developers and organizations alike.</p>
+            <ul class="list-disc list-inside space-y-2">
+                <li><strong>Readability and Simplicity:</strong> Its clear, concise syntax makes it easy to learn, read, and maintain, leading to faster development cycles.</li>
+                <li><strong>Versatility:</strong> Python is a general-purpose language applicable in a vast array of fields, including web development, data science, machine learning, artificial intelligence, automation, scripting, scientific computing, and more.</li>
+                <li><strong>Large Community and Ecosystem:</strong> A vibrant and active community contributes to a wealth of resources, tutorials, and an enormous collection of third-party libraries and frameworks.</li>
+                <li><strong>Cross-Platform Compatibility:</strong> Python code can run seamlessly on various operating systems, including Windows, macOS, and Linux, without modification.</li>
+                <li><strong>High-Level Language:</strong> It abstracts away complex low-level details of memory management and hardware interaction, allowing developers to focus more on problem-solving.</li>
+            </ul>
+            <p class="mt-4 text-lg">These factors combine to make Python an incredibly powerful and accessible language for beginners and experienced developers alike.</p>
+        </section>
+
+        <!-- Link to Main Python Page -->
+        <div class="mt-10 p-6 bg-blue-100 border-l-4 border-blue-500 text-blue-800 rounded-md shadow-inner">
+            <p class="text-lg">For more in-depth information and official documentation, please visit the <a href="https://www.python.org/" target="_blank" class="text-blue-700 hover:underline font-semibold">Official Python Website</a>.</p>
+        </div>
+
+    </main>
+
+</body>
+</html>

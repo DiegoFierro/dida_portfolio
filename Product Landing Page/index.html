@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capoeira Instruments</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header id="header" class="flex items-center justify-between p-4 rounded-b-lg">
+        <img id="header-img" src="https://miro.medium.com/v2/resize:fit:1280/1*_jRrUNI5-WtB09eH94fSbg.jpeg" alt="Capoeira Instruments Logo" class="h-16 w-auto rounded-lg shadow-md">
+        <nav id="nav-bar" class="flex space-x-6">
+            <a class="nav-link text-lg px-4 py-2 rounded-md hover:bg-gray-700" href="#features">Features</a>
+            <a class="nav-link text-lg px-4 py-2 rounded-md hover:bg-gray-700" href="#how-it-works">How It Works</a>
+            <a class="nav-link text-lg px-4 py-2 rounded-md hover:bg-gray-700" href="#pricing">Pricing</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto mt-24 p-6">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center mb-16 bg-white p-8 rounded-xl shadow-lg">
+            <h1 class="text-5xl font-extrabold text-indigo-700 mb-6">Master the Rhythm of Capoeira</h1>
+            <p class="text-xl text-gray-600 mb-8">Discover our authentic collection of handcrafted Capoeira instruments, designed for sound and spirit.</p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" class="flex flex-col items-center space-y-4">
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email for exclusive offers"
+                    class="p-3 w-full max-w-md border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition duration-300 ease-in-out"
+                    required
+                >
+                <input
+                    type="submit"
+                    id="submit"
+                    value="Get Started"
+                    class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-300 ease-in-out cursor-pointer"
+                >
+            </form>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-center text-indigo-700 mb-10">Our Instruments</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1: Berimbau -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/150x150/81C784/FFFFFF?text=Berimbau" alt="Berimbau" class="w-36 h-36 mb-4 rounded-full border-4 border-indigo-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Authentic Berimbaus</h3>
+                    <p class="text-gray-600">Handcrafted from high-quality wood and natural gourds, producing the soul-stirring sound essential to Capoeira.</p>
+                </div>
+                <!-- Feature 2: Atabaque -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/150x150/FFB74D/FFFFFF?text=Atabaque" alt="Atabaque" class="w-36 h-36 mb-4 rounded-full border-4 border-indigo-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Powerful Atabaques</h3>
+                    <p class="text-gray-600">Durable drums with rich, resonant tones, perfect for setting the rhythm and energy of the Roda.</p>
+                </div>
+                <!-- Feature 3: Pandeiro -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/150x150/64B5F6/FFFFFF?text=Pandeiro" alt="Pandeiro" class="w-36 h-36 mb-4 rounded-full border-4 border-indigo-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Vibrant Pandeiros</h3>
+                    <p class="text-gray-600">Lightweight and responsive tambourines, adding intricate percussive layers to your music.</p>
+                </div>
+                <!-- Feature 4: Caxixi -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/150x150/8BC34A/FFFFFF?text=Caxixi" alt="Caxixi" class="w-36 h-36 mb-4 rounded-full border-4 border-indigo-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Rhythmic Caxixis</h3>
+                    <p class="text-gray-600">Small, hand-woven rattles that provide a crisp, percussive sound, often played with the Berimbau.</p>
+                </div>
+                <!-- Feature 5: Agogô -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/150x150/FFEB3B/FFFFFF?text=Agogo" alt="Agogo" class="w-36 h-36 mb-4 rounded-full border-4 border-indigo-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Melodic Agogôs</h3>
+                    <p class="text-gray-600">A double or triple bell instrument that adds a distinct metallic tone and melodic rhythm to the Capoeira orchestra.</p>
+                </div>
+                <!-- Feature 6: Reco-Reco -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="https://placehold.co/150x150/9C27B0/FFFFFF?text=Reco-Reco" alt="Reco-Reco" class="w-36 h-36 mb-4 rounded-full border-4 border-indigo-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Scratching Reco-Recos</h3>
+                    <p class="text-gray-600">A percussive instrument made from a hollow wooden or bamboo body with grooves, played by scraping a stick across them.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-center text-indigo-700 mb-10">How Our Instruments Are Made</h2>
+            <div class="flex flex-col items-center">
+                <iframe
+                    id="video"
+                    src="https://www.youtube.com/embed/G6pmxkfPXp4"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    class="w-full max-w-3xl h-96 rounded-xl shadow-xl mb-8"
+                ></iframe>
+                <p class="text-lg text-gray-600 text-center max-w-3xl">Watch this video to see the traditional craftsmanship and dedication that goes into creating each of our Capoeira instruments, ensuring authentic sound and durability.</p>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="mb-16 bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold text-center text-indigo-700 mb-10">Pricing & Packages</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pricing Card 1: Beginner Set -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md border-2 border-indigo-200">
+                    <h3 class="text-3xl font-bold text-indigo-600 mb-4">Beginner Set</h3>
+                    <p class="text-5xl font-extrabold text-gray-900 mb-4">$199</p>
+                    <ul class="text-gray-700 text-lg space-y-2 mb-6">
+                        <li>1 x Basic Berimbau</li>
+                        <li>1 x Pandeiro</li>
+                        <li>Beginner's Guide</li>
+                        <li>Free Shipping</li>
+                    </ul>
+                    <button class="bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 ease-in-out">Select</button>
+                </div>
+                <!-- Pricing Card 2: Intermediate Set -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md border-2 border-indigo-400 transform scale-105 relative z-10">
+                    <span class="absolute -top-4 bg-yellow-500 text-white text-sm font-bold px-3 py-1 rounded-full shadow-lg">Most Popular</span>
+                    <h3 class="text-3xl font-bold text-indigo-600 mb-4">Intermediate Set</h3>
+                    <p class="text-5xl font-extrabold text-gray-900 mb-4">$349</p>
+                    <ul class="text-gray-700 text-lg space-y-2 mb-6">
+                        <li>1 x Professional Berimbau</li>
+                        <li>1 x Atabaque (small)</li>
+                        <li>1 x Pandeiro</li>
+                        <li>Instrument Bag</li>
+                    </ul>
+                    <button class="bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 ease-in-out">Select</button>
+                </div>
+                <!-- Pricing Card 3: Master Set -->
+                <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md border-2 border-indigo-200">
+                    <h3 class="text-3xl font-bold text-indigo-600 mb-4">Master Set</h3>
+                    <p class="text-5xl font-extrabold text-gray-900 mb-4">$599</p>
+                    <ul class="text-gray-700 text-lg space-y-2 mb-6">
+                        <li>3 x Berimbaus (Gunga, Medio, Viola)</li>
+                        <li>1 x Atabaque (medium)</li>
+                        <li>2 x Pandeiros</li>
+                        <li>Agogô & Reco-reco</li>
+                    </ul>
+                    <button class="bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 ease-in-out">Select</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white text-center p-6 rounded-t-lg shadow-inner">
+        <p class="text-lg mb-2">&copy; 2025 Capoeira Instruments. All rights reserved.</p>
+        <p class="text-sm">Designed with passion for the art of Capoeira.</p>
+    </footer>
+
+</body>
+</html>

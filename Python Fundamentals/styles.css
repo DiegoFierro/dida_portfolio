@@ -1,0 +1,55 @@
+/* Python Fundamentals Stylesheet */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6; /* Light gray background */
+    color: #374151; /* Dark gray text */
+}
+
+/* Custom scrollbar for main-doc */
+#main-doc::-webkit-scrollbar {
+    width: 8px;
+}
+#main-doc::-webkit-scrollbar-track {
+    background: #e5e7eb;
+    border-radius: 10px;
+}
+#main-doc::-webkit-scrollbar-thumb {
+    background: #9ca3af;
+    border-radius: 10px;
+}
+#main-doc::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+}
+
+/* Custom scrollbar for navbar */
+#navbar::-webkit-scrollbar {
+    width: 8px;
+}
+#navbar::-webkit-scrollbar-track {
+    background: #e5e7eb;
+    border-radius: 10px;
+}
+#navbar::-webkit-scrollbar-thumb {
+    background: #9ca3af;
+    border-radius: 10px;
+}
+#navbar::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+}
+
+/* Responsive Navbar: On small screens, navbar is at the top */
+@media (max-width: 767px) {
+    #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-height: 200px; /* Limit height on small screens */
+        overflow-y: auto;
+        border-bottom: 2px solid #d1d5db;
+    }
+    #main-doc {
+        margin-left: 0;
+        padding-top: 1rem; /* Adjust padding for top navbar */
+    }
+}
