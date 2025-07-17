@@ -7,7 +7,7 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome CDN for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -20,7 +20,6 @@
             <li><a href="#welcome-section" class="hover:text-light-olive transition duration-300 ease-in-out text-lg md:text-xl font-semibold px-4 py-2 rounded-md">Welcome</a></li>
             <li><a href="#projects" class="hover:text-light-olive transition duration-300 ease-in-out text-lg md:text-xl font-semibold px-4 py-2 rounded-md">Projects</a></li>
             <li><a href="#contact-section" class="hover:text-light-olive transition duration-300 ease-in-out text-lg md:text-xl font-semibold px-4 py-2 rounded-md">Contact</a></li>
-            <!-- Removed GitHub Profile link from navbar -->
         </ul>
     </nav>
 
@@ -84,12 +83,12 @@
         <p class="text-xl md:text-2xl text-gray-700 max-w-2xl mx-auto mb-10">
             I'm always open to new opportunities and collaborations. Feel free to reach out!
         </p>
-        <!-- Increased icon size from text-2xl to text-3xl -->
         <div class="flex flex-wrap justify-center items-center space-x-6 md:space-x-8 text-3xl">
             <a href="https://www.facebook.com/DiegoFierro.0" target="_blank" class="hover:text-blue-600 transition duration-300 ease-in-out" aria-label="Facebook Profile">
                 <i class="fab fa-facebook-square"></i>
             </a>
-            <a href="https://github.com/DiegoFierro" target="_blank" class="hover:text-gray-700 transition duration-300 ease-in-out" aria-label="GitHub Profile">
+            <!-- Added id="profile-link" to the GitHub Profile link in the contact section -->
+            <a id="profile-link" href="https://github.com/DiegoFierro" target="_blank" class="hover:text-gray-700 transition duration-300 ease-in-out" aria-label="GitHub Profile">
                 <i class="fab fa-github-square"></i>
             </a>
             <a href="https://x.com/DiegoFierro01" target="_blank" class="hover:text-blue-500 transition duration-300 ease-in-out" aria-label="X (Twitter) Profile">
